@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B86961F67EEF802C85CF514 /* Pods_githubauth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456022DBE8EBA7F577228558 /* Pods_githubauth.framework */; };
+		A1A8CC4422791BA021F4786F /* Pods_githubauthTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6073A7A48D2597AD736B2D00 /* Pods_githubauthTests.framework */; };
+		F64B6B6A22B061B800128D29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64B6B6922B061B800128D29 /* AppDelegate.swift */; };
+		F64B6B6C22B061B800128D29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64B6B6B22B061B800128D29 /* ViewController.swift */; };
+		F64B6B6F22B061B800128D29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F64B6B6D22B061B800128D29 /* Main.storyboard */; };
+		F64B6B7122B061B900128D29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F64B6B7022B061B900128D29 /* Assets.xcassets */; };
+		F64B6B7422B061B900128D29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F64B6B7222B061B900128D29 /* LaunchScreen.storyboard */; };
+		F64B6B7F22B061B900128D29 /* githubauthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64B6B7E22B061B900128D29 /* githubauthTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F64B6B7B22B061B900128D29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F64B6B5E22B061B700128D29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F64B6B6522B061B800128D29;
+			remoteInfo = githubauth;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		456022DBE8EBA7F577228558 /* Pods_githubauth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_githubauth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6073A7A48D2597AD736B2D00 /* Pods_githubauthTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_githubauthTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7580CE02401D981834909243 /* Pods-githubauthTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-githubauthTests.debug.xcconfig"; path = "Target Support Files/Pods-githubauthTests/Pods-githubauthTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AEB2AABE0CF26001C611C582 /* Pods-githubauth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-githubauth.debug.xcconfig"; path = "Target Support Files/Pods-githubauth/Pods-githubauth.debug.xcconfig"; sourceTree = "<group>"; };
+		B913D2649C1608FF966AA27B /* Pods-githubauthTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-githubauthTests.release.xcconfig"; path = "Target Support Files/Pods-githubauthTests/Pods-githubauthTests.release.xcconfig"; sourceTree = "<group>"; };
+		C5015508A9EAFF0FB6DBEAD5 /* Pods-githubauth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-githubauth.release.xcconfig"; path = "Target Support Files/Pods-githubauth/Pods-githubauth.release.xcconfig"; sourceTree = "<group>"; };
+		F64B6B6622B061B800128D29 /* githubauth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = githubauth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F64B6B6922B061B800128D29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F64B6B6B22B061B800128D29 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F64B6B6E22B061B800128D29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F64B6B7022B061B900128D29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F64B6B7322B061B900128D29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F64B6B7522B061B900128D29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F64B6B7A22B061B900128D29 /* githubauthTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = githubauthTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F64B6B7E22B061B900128D29 /* githubauthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = githubauthTests.swift; sourceTree = "<group>"; };
+		F64B6B8022B061B900128D29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F64B6B6322B061B800128D29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B86961F67EEF802C85CF514 /* Pods_githubauth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F64B6B7722B061B900128D29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1A8CC4422791BA021F4786F /* Pods_githubauthTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		062B9286D2FFA6691AC10930 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AEB2AABE0CF26001C611C582 /* Pods-githubauth.debug.xcconfig */,
+				C5015508A9EAFF0FB6DBEAD5 /* Pods-githubauth.release.xcconfig */,
+				7580CE02401D981834909243 /* Pods-githubauthTests.debug.xcconfig */,
+				B913D2649C1608FF966AA27B /* Pods-githubauthTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A0A75286FE90FE19B6E6FA37 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				456022DBE8EBA7F577228558 /* Pods_githubauth.framework */,
+				6073A7A48D2597AD736B2D00 /* Pods_githubauthTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F64B6B5D22B061B700128D29 = {
+			isa = PBXGroup;
+			children = (
+				F64B6B6822B061B800128D29 /* githubauth */,
+				F64B6B7D22B061B900128D29 /* githubauthTests */,
+				F64B6B6722B061B800128D29 /* Products */,
+				062B9286D2FFA6691AC10930 /* Pods */,
+				A0A75286FE90FE19B6E6FA37 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F64B6B6722B061B800128D29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F64B6B6622B061B800128D29 /* githubauth.app */,
+				F64B6B7A22B061B900128D29 /* githubauthTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F64B6B6822B061B800128D29 /* githubauth */ = {
+			isa = PBXGroup;
+			children = (
+				F64B6B8922B0629F00128D29 /* Configuration */,
+				F64B6B8A22B062A900128D29 /* UI */,
+				F64B6B8B22B062B300128D29 /* Workers */,
+				F64B6B8C22B062BC00128D29 /* Persistence */,
+				F64B6B8D22B062C500128D29 /* Network */,
+				F64B6B7522B061B900128D29 /* Info.plist */,
+				F64B6B6922B061B800128D29 /* AppDelegate.swift */,
+				F64B6B6B22B061B800128D29 /* ViewController.swift */,
+				F64B6B7022B061B900128D29 /* Assets.xcassets */,
+				F64B6B7222B061B900128D29 /* LaunchScreen.storyboard */,
+			);
+			path = githubauth;
+			sourceTree = "<group>";
+		};
+		F64B6B7D22B061B900128D29 /* githubauthTests */ = {
+			isa = PBXGroup;
+			children = (
+				F64B6B7E22B061B900128D29 /* githubauthTests.swift */,
+				F64B6B8022B061B900128D29 /* Info.plist */,
+			);
+			path = githubauthTests;
+			sourceTree = "<group>";
+		};
+		F64B6B8922B0629F00128D29 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		F64B6B8A22B062A900128D29 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F64B6B8E22B062D400128D29 /* Storyboards */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		F64B6B8B22B062B300128D29 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		F64B6B8C22B062BC00128D29 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		F64B6B8D22B062C500128D29 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F64B6B8E22B062D400128D29 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F64B6B6D22B061B800128D29 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F64B6B6522B061B800128D29 /* githubauth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F64B6B8322B061B900128D29 /* Build configuration list for PBXNativeTarget "githubauth" */;
+			buildPhases = (
+				2339BFFCA606FA40D72DE705 /* [CP] Check Pods Manifest.lock */,
+				F64B6B6222B061B800128D29 /* Sources */,
+				F64B6B6322B061B800128D29 /* Frameworks */,
+				F64B6B6422B061B800128D29 /* Resources */,
+				6CE4539EB9A0A2F49882FBB1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = githubauth;
+			productName = githubauth;
+			productReference = F64B6B6622B061B800128D29 /* githubauth.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F64B6B7922B061B900128D29 /* githubauthTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F64B6B8622B061B900128D29 /* Build configuration list for PBXNativeTarget "githubauthTests" */;
+			buildPhases = (
+				E0461A027C816112412C33FE /* [CP] Check Pods Manifest.lock */,
+				F64B6B7622B061B900128D29 /* Sources */,
+				F64B6B7722B061B900128D29 /* Frameworks */,
+				F64B6B7822B061B900128D29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F64B6B7C22B061B900128D29 /* PBXTargetDependency */,
+			);
+			name = githubauthTests;
+			productName = githubauthTests;
+			productReference = F64B6B7A22B061B900128D29 /* githubauthTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F64B6B5E22B061B700128D29 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = jonathan;
+				TargetAttributes = {
+					F64B6B6522B061B800128D29 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					F64B6B7922B061B900128D29 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = F64B6B6522B061B800128D29;
+					};
+				};
+			};
+			buildConfigurationList = F64B6B6122B061B700128D29 /* Build configuration list for PBXProject "githubauth" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F64B6B5D22B061B700128D29;
+			productRefGroup = F64B6B6722B061B800128D29 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F64B6B6522B061B800128D29 /* githubauth */,
+				F64B6B7922B061B900128D29 /* githubauthTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F64B6B6422B061B800128D29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F64B6B7422B061B900128D29 /* LaunchScreen.storyboard in Resources */,
+				F64B6B7122B061B900128D29 /* Assets.xcassets in Resources */,
+				F64B6B6F22B061B800128D29 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F64B6B7822B061B900128D29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2339BFFCA606FA40D72DE705 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-githubauth-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CE4539EB9A0A2F49882FBB1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-githubauth/Pods-githubauth-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-githubauth/Pods-githubauth-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-githubauth/Pods-githubauth-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0461A027C816112412C33FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-githubauthTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F64B6B6222B061B800128D29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F64B6B6C22B061B800128D29 /* ViewController.swift in Sources */,
+				F64B6B6A22B061B800128D29 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F64B6B7622B061B900128D29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F64B6B7F22B061B900128D29 /* githubauthTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F64B6B7C22B061B900128D29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F64B6B6522B061B800128D29 /* githubauth */;
+			targetProxy = F64B6B7B22B061B900128D29 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F64B6B6D22B061B800128D29 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F64B6B6E22B061B800128D29 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F64B6B7222B061B900128D29 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F64B6B7322B061B900128D29 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F64B6B8122B061B900128D29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F64B6B8222B061B900128D29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F64B6B8422B061B900128D29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEB2AABE0CF26001C611C582 /* Pods-githubauth.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2QHT6NJ4A9;
+				INFOPLIST_FILE = githubauth/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jonathan-freitas.githubauth";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F64B6B8522B061B900128D29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5015508A9EAFF0FB6DBEAD5 /* Pods-githubauth.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2QHT6NJ4A9;
+				INFOPLIST_FILE = githubauth/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jonathan-freitas.githubauth";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F64B6B8722B061B900128D29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7580CE02401D981834909243 /* Pods-githubauthTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2QHT6NJ4A9;
+				INFOPLIST_FILE = githubauthTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jonathan-freitas.githubauthTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/githubauth.app/githubauth";
+			};
+			name = Debug;
+		};
+		F64B6B8822B061B900128D29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B913D2649C1608FF966AA27B /* Pods-githubauthTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2QHT6NJ4A9;
+				INFOPLIST_FILE = githubauthTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jonathan-freitas.githubauthTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/githubauth.app/githubauth";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F64B6B6122B061B700128D29 /* Build configuration list for PBXProject "githubauth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F64B6B8122B061B900128D29 /* Debug */,
+				F64B6B8222B061B900128D29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F64B6B8322B061B900128D29 /* Build configuration list for PBXNativeTarget "githubauth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F64B6B8422B061B900128D29 /* Debug */,
+				F64B6B8522B061B900128D29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F64B6B8622B061B900128D29 /* Build configuration list for PBXNativeTarget "githubauthTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F64B6B8722B061B900128D29 /* Debug */,
+				F64B6B8822B061B900128D29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F64B6B5E22B061B700128D29 /* Project object */;
+}
