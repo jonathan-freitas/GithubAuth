@@ -10,6 +10,8 @@
 #endif
 #endif
 
+#import "MaterialActivityIndicator.h"
+#import "MDCActivityIndicator.h"
 #import "CAMediaTimingFunction+MDCAnimationTiming.h"
 #import "MaterialAnimationTiming.h"
 #import "UIView+MDCTimingFunction.h"
@@ -30,6 +32,8 @@
 #import "MDCInkGestureRecognizer.h"
 #import "MDCInkTouchController.h"
 #import "MDCInkView.h"
+#import "MaterialPalettes.h"
+#import "MDCPalettes.h"
 #import "MaterialRipple.h"
 #import "MDCRippleTouchController.h"
 #import "MDCRippleView.h"
