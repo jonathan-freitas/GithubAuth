@@ -9,7 +9,7 @@
 import Foundation
 import GithubAPI
 
-struct User {
+struct User: Equatable {
     
     // MARK: - Properties
     var name: String?
@@ -18,6 +18,10 @@ struct User {
     var avatarUrl: String?
     var location: String?
     var email: String?
+    
+    static func ==(lhs: User, rhs: User) -> Bool {
+        return lhs.name == rhs.name && lhs.username == rhs.username
+    }
     
 }
 
