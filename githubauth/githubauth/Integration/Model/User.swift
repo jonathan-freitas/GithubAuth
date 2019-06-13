@@ -31,3 +31,15 @@ extension UserResponse {
         }
     }
 }
+
+extension User {
+    /// Method responsible for mapping this user to the realm model.
+    func toUserRealm() -> UserRealm {
+        return UserRealm(name: self.name ?? "Name not provided.",
+                         username: self.username ?? "Username not provided.",
+                         bio: self.bio ?? "Bio not provided.",
+                         avatarUrl: self.avatarUrl ?? "",
+                         location: self.location ?? "Location not provided.",
+                         email: self.email ?? "Email not provided.")
+    }
+}

@@ -18,6 +18,7 @@ target 'githubauth' do
   # UI
   pod 'MaterialComponents/Dialogs'
   pod 'MaterialComponents/ActivityIndicator'
+  pod 'IQKeyboardManagerSwift'
 
   target 'githubauthTests' do
     inherit! :search_paths
