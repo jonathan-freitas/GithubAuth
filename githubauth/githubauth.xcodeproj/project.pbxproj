@@ -251,8 +251,8 @@
 		F64B6B7D22B061B900128D29 /* githubauthTests */ = {
 			isa = PBXGroup;
 			children = (
-				F64B6B8022B061B900128D29 /* Info.plist */,
 				2D56FDCD22B2E215001C8A5B /* PersisteceTests.swift */,
+				F64B6B8022B061B900128D29 /* Info.plist */,
 			);
 			path = githubauthTests;
 			sourceTree = "<group>";
