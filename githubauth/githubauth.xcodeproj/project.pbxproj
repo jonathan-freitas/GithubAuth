@@ -14,6 +14,12 @@
 		2D56FDB522B16EB0001C8A5B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D56FDB422B16EB0001C8A5B /* User.swift */; };
 		2D56FDB722B171DC001C8A5B /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D56FDB622B171DC001C8A5B /* UIViewController+Extension.swift */; };
 		2D56FDBA22B17862001C8A5B /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D56FDB922B17862001C8A5B /* LoadingIndicator.swift */; };
+		2D56FDC122B29D06001C8A5B /* ConnectionRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D56FDC022B29D06001C8A5B /* ConnectionRealm.swift */; };
+		2D56FDC322B29D24001C8A5B /* UserRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D56FDC222B29D24001C8A5B /* UserRealm.swift */; };
+		2D56FDC522B2B922001C8A5B /* UserPersistenceContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D56FDC422B2B922001C8A5B /* UserPersistenceContract.swift */; };
+		2D56FDC722B2B96E001C8A5B /* UserPersistenceWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D56FDC622B2B96E001C8A5B /* UserPersistenceWorker.swift */; };
+		2D56FDCA22B2BE0D001C8A5B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D56FDC922B2BE0D001C8A5B /* ProfileViewController.swift */; };
+		2D56FDCC22B2BFA4001C8A5B /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D56FDCB22B2BFA4001C8A5B /* Navigation.swift */; };
 		A1A8CC4422791BA021F4786F /* Pods_githubauthTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6073A7A48D2597AD736B2D00 /* Pods_githubauthTests.framework */; };
 		F64B6B6A22B061B800128D29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64B6B6922B061B800128D29 /* AppDelegate.swift */; };
 		F64B6B7122B061B900128D29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F64B6B7022B061B900128D29 /* Assets.xcassets */; };
@@ -40,6 +46,12 @@
 		2D56FDB422B16EB0001C8A5B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2D56FDB622B171DC001C8A5B /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		2D56FDB922B17862001C8A5B /* LoadingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
+		2D56FDC022B29D06001C8A5B /* ConnectionRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionRealm.swift; sourceTree = "<group>"; };
+		2D56FDC222B29D24001C8A5B /* UserRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRealm.swift; sourceTree = "<group>"; };
+		2D56FDC422B2B922001C8A5B /* UserPersistenceContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPersistenceContract.swift; sourceTree = "<group>"; };
+		2D56FDC622B2B96E001C8A5B /* UserPersistenceWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPersistenceWorker.swift; sourceTree = "<group>"; };
+		2D56FDC922B2BE0D001C8A5B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		2D56FDCB22B2BFA4001C8A5B /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
 		456022DBE8EBA7F577228558 /* Pods_githubauth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_githubauth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6073A7A48D2597AD736B2D00 /* Pods_githubauthTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_githubauthTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7580CE02401D981834909243 /* Pods-githubauthTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-githubauthTests.debug.xcconfig"; path = "Target Support Files/Pods-githubauthTests/Pods-githubauthTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -111,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				2D56FDA622B14224001C8A5B /* Constants.swift */,
+				2D56FDCB22B2BFA4001C8A5B /* Navigation.swift */,
 				2D56FDB622B171DC001C8A5B /* UIViewController+Extension.swift */,
 			);
 			path = Configuration;
@@ -138,6 +151,57 @@
 				2D56FDB922B17862001C8A5B /* LoadingIndicator.swift */,
 			);
 			path = LoadingIndicator;
+			sourceTree = "<group>";
+		};
+		2D56FDBB22B29CAB001C8A5B /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				2D56FDBE22B29CD2001C8A5B /* Configuration */,
+				2D56FDBD22B29CC5001C8A5B /* Contracts */,
+				2D56FDBC22B29CC1001C8A5B /* Models */,
+				2D56FDBF22B29CD7001C8A5B /* Worker */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		2D56FDBC22B29CC1001C8A5B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2D56FDC222B29D24001C8A5B /* UserRealm.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2D56FDBD22B29CC5001C8A5B /* Contracts */ = {
+			isa = PBXGroup;
+			children = (
+				2D56FDC422B2B922001C8A5B /* UserPersistenceContract.swift */,
+			);
+			path = Contracts;
+			sourceTree = "<group>";
+		};
+		2D56FDBE22B29CD2001C8A5B /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				2D56FDC022B29D06001C8A5B /* ConnectionRealm.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		2D56FDBF22B29CD7001C8A5B /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+				2D56FDC622B2B96E001C8A5B /* UserPersistenceWorker.swift */,
+			);
+			path = Worker;
+			sourceTree = "<group>";
+		};
+		2D56FDC822B2BDF1001C8A5B /* ProfileViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2D56FDC922B2BE0D001C8A5B /* ProfileViewController.swift */,
+			);
+			path = ProfileViewController;
 			sourceTree = "<group>";
 		};
 		A0A75286FE90FE19B6E6FA37 /* Frameworks */ = {
@@ -195,8 +259,10 @@
 		F64B6B8A22B062A900128D29 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				2D56FDC822B2BDF1001C8A5B /* ProfileViewController */,
 				F6E47A4622B07225008B8356 /* LoginViewController */,
 				F64B6B8E22B062D400128D29 /* Storyboards */,
+				2D56FDBB22B29CAB001C8A5B /* Persistence */,
 				2D56FD9F22B141B2001C8A5B /* Components */,
 			);
 			path = UI;
@@ -387,12 +453,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D56FDC322B29D24001C8A5B /* UserRealm.swift in Sources */,
 				2D56FDA222B141D1001C8A5B /* Dialog.swift in Sources */,
+				2D56FDC122B29D06001C8A5B /* ConnectionRealm.swift in Sources */,
 				F6E47A4822B0723D008B8356 /* LoginViewController.swift in Sources */,
+				2D56FDC522B2B922001C8A5B /* UserPersistenceContract.swift in Sources */,
 				F64B6B6A22B061B800128D29 /* AppDelegate.swift in Sources */,
 				2D56FDA722B14224001C8A5B /* Constants.swift in Sources */,
 				2D56FDBA22B17862001C8A5B /* LoadingIndicator.swift in Sources */,
+				2D56FDC722B2B96E001C8A5B /* UserPersistenceWorker.swift in Sources */,
+				2D56FDCC22B2BFA4001C8A5B /* Navigation.swift in Sources */,
 				2D56FDB222B146AA001C8A5B /* LoginViewModel.swift in Sources */,
+				2D56FDCA22B2BE0D001C8A5B /* ProfileViewController.swift in Sources */,
 				2D56FDB522B16EB0001C8A5B /* User.swift in Sources */,
 				2D56FDB722B171DC001C8A5B /* UIViewController+Extension.swift in Sources */,
 			);

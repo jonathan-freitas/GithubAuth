@@ -8,6 +8,7 @@
 
 import UIKit
 import GithubAPI
+import IQKeyboardManagerSwift
 import MaterialComponents.MaterialDialogs
 
 class LoginViewController: UIViewController {
@@ -22,8 +23,22 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.initialConfigs()
+        self.checkLoggedUser()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        IQKeyboardManager.shared.enable = true
         
-        initialConfigs()
+        // Cleaning fields
+        usernameTxtField.text = ""
+        passwordTxtField.text = ""
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        IQKeyboardManager.shared.enable = false
     }
     
     /// Method responsible for setting up the initial configurations
@@ -41,7 +56,16 @@ class LoginViewController: UIViewController {
         loginBtn.layer.cornerRadius = 15
         loginBtn.layer.masksToBounds = true
         loginBtn.addTarget(self, action: #selector(loginAction(_:)), for: UIControl.Event.touchUpInside)
-
+    }
+    
+    /// Method responsible to check if there's a user logged in.
+    private func checkLoggedUser() {
+        let savedUser = LoginViewModel.getUser()
+        if let user = savedUser {
+            Navigation.pushProfileView(viewController: self, user: user)
+        } else {
+            print("No logged in user found.")
+        }
     }
     
     /// Function responsible for checking everything before sending to login().
@@ -53,6 +77,11 @@ class LoginViewController: UIViewController {
                 login(username: userText, password: passText)
             }
         }
+    }
+    
+    /// Method responsible to enable or disable the secure text.
+    @IBAction func showPassword(_ sender: UIButton) {
+        passwordTxtField.isSecureTextEntry = !passwordTxtField.isSecureTextEntry
     }
     
     /// Function responsible to login.
@@ -72,7 +101,13 @@ class LoginViewController: UIViewController {
                     self.showErrorMessage(error: error as NSError)
                 } else if let user = response?.toUser() {
                     self.loadingIndicator.stopActivityIndicator()
-                    print(user)
+                    
+                    // Saving the user locally & Pushing to ProfielView
+                    let savedUser = LoginViewModel.saveUser(user)
+                    if let savedUser = savedUser {
+                        Navigation.pushProfileView(viewController: self, user: savedUser)
+                    }
+                    
                 } else {
                     self.loadingIndicator.stopActivityIndicator()
                     self.showErrorMessage(error: Constants.ErrorObjects.WrongCredentials)
