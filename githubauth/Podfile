@@ -7,6 +7,9 @@ target 'githubauth' do
 
   # Pods for githubauth
 
+  # Main
+  pod 'GithubAPI'
+  
   # Utility
   pod 'Alamofire'
   pod 'RealmSwift'
@@ -14,7 +17,8 @@ target 'githubauth' do
 
   # UI
   pod 'MaterialComponents/Dialogs'
-  pod 'MaterialComponents/Ink'
+  pod 'MaterialComponents/ActivityIndicator'
+  pod 'IQKeyboardManagerSwift'
 
   target 'githubauthTests' do
     inherit! :search_paths
