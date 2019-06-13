@@ -20,11 +20,11 @@
 		2D56FDC722B2B96E001C8A5B /* UserPersistenceWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D56FDC622B2B96E001C8A5B /* UserPersistenceWorker.swift */; };
 		2D56FDCA22B2BE0D001C8A5B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D56FDC922B2BE0D001C8A5B /* ProfileViewController.swift */; };
 		2D56FDCC22B2BFA4001C8A5B /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D56FDCB22B2BFA4001C8A5B /* Navigation.swift */; };
+		2D56FDCE22B2E215001C8A5B /* PersisteceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D56FDCD22B2E215001C8A5B /* PersisteceTests.swift */; };
 		A1A8CC4422791BA021F4786F /* Pods_githubauthTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6073A7A48D2597AD736B2D00 /* Pods_githubauthTests.framework */; };
 		F64B6B6A22B061B800128D29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64B6B6922B061B800128D29 /* AppDelegate.swift */; };
 		F64B6B7122B061B900128D29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F64B6B7022B061B900128D29 /* Assets.xcassets */; };
 		F64B6B7422B061B900128D29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F64B6B7222B061B900128D29 /* LaunchScreen.storyboard */; };
-		F64B6B7F22B061B900128D29 /* githubauthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64B6B7E22B061B900128D29 /* githubauthTests.swift */; };
 		F6E47A4522B07220008B8356 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6E47A4422B07220008B8356 /* Main.storyboard */; };
 		F6E47A4822B0723D008B8356 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E47A4722B0723D008B8356 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
@@ -52,6 +52,7 @@
 		2D56FDC622B2B96E001C8A5B /* UserPersistenceWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPersistenceWorker.swift; sourceTree = "<group>"; };
 		2D56FDC922B2BE0D001C8A5B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		2D56FDCB22B2BFA4001C8A5B /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
+		2D56FDCD22B2E215001C8A5B /* PersisteceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersisteceTests.swift; sourceTree = "<group>"; };
 		456022DBE8EBA7F577228558 /* Pods_githubauth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_githubauth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6073A7A48D2597AD736B2D00 /* Pods_githubauthTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_githubauthTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7580CE02401D981834909243 /* Pods-githubauthTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-githubauthTests.debug.xcconfig"; path = "Target Support Files/Pods-githubauthTests/Pods-githubauthTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -64,7 +65,6 @@
 		F64B6B7322B061B900128D29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F64B6B7522B061B900128D29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F64B6B7A22B061B900128D29 /* githubauthTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = githubauthTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F64B6B7E22B061B900128D29 /* githubauthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = githubauthTests.swift; sourceTree = "<group>"; };
 		F64B6B8022B061B900128D29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6E47A4422B07220008B8356 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F6E47A4722B0723D008B8356 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -239,6 +239,7 @@
 				2D56FDA522B14218001C8A5B /* Configuration */,
 				F64B6B8A22B062A900128D29 /* UI */,
 				2D56FDAB22B145AB001C8A5B /* Integration */,
+				2D56FDBB22B29CAB001C8A5B /* Persistence */,
 				F64B6B7522B061B900128D29 /* Info.plist */,
 				F64B6B6922B061B800128D29 /* AppDelegate.swift */,
 				F64B6B7022B061B900128D29 /* Assets.xcassets */,
@@ -250,8 +251,8 @@
 		F64B6B7D22B061B900128D29 /* githubauthTests */ = {
 			isa = PBXGroup;
 			children = (
-				F64B6B7E22B061B900128D29 /* githubauthTests.swift */,
 				F64B6B8022B061B900128D29 /* Info.plist */,
+				2D56FDCD22B2E215001C8A5B /* PersisteceTests.swift */,
 			);
 			path = githubauthTests;
 			sourceTree = "<group>";
@@ -259,10 +260,9 @@
 		F64B6B8A22B062A900128D29 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				2D56FDC822B2BDF1001C8A5B /* ProfileViewController */,
 				F6E47A4622B07225008B8356 /* LoginViewController */,
+				2D56FDC822B2BDF1001C8A5B /* ProfileViewController */,
 				F64B6B8E22B062D400128D29 /* Storyboards */,
-				2D56FDBB22B29CAB001C8A5B /* Persistence */,
 				2D56FD9F22B141B2001C8A5B /* Components */,
 			);
 			path = UI;
@@ -341,6 +341,7 @@
 					};
 					F64B6B7922B061B900128D29 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = F64B6B6522B061B800128D29;
 					};
 				};
@@ -474,7 +475,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F64B6B7F22B061B900128D29 /* githubauthTests.swift in Sources */,
+				2D56FDCE22B2E215001C8A5B /* PersisteceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -622,7 +623,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E9BBEYTP2D;
+				DEVELOPMENT_TEAM = 2QHT6NJ4A9;
 				INFOPLIST_FILE = githubauth/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -642,7 +643,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E9BBEYTP2D;
+				DEVELOPMENT_TEAM = 2QHT6NJ4A9;
 				INFOPLIST_FILE = githubauth/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -662,6 +663,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2QHT6NJ4A9;
 				INFOPLIST_FILE = githubauthTests/Info.plist;
@@ -672,6 +674,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jonathan-freitas.githubauthTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/githubauth.app/githubauth";
@@ -684,6 +687,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2QHT6NJ4A9;
 				INFOPLIST_FILE = githubauthTests/Info.plist;
